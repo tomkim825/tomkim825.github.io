@@ -7,9 +7,12 @@ body{
     color:#777777;
     height:100%
 }
+p{
+    line-height:125%;
+}
 .wrapper{
     min-height:100%;
-    margin-bottom:-50px;
+    margin-bottom:-50px;    
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
