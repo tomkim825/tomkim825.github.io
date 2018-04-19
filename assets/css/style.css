@@ -21,6 +21,12 @@ a{
     text-decoration: none;
 }
 
+a:hover {
+    font-weight: bolder;
+    color:black;
+    transition: all 0.15s ease;
+}
+
 a:visited{
     color:#777777;
 }
@@ -38,6 +44,7 @@ a:visited{
  padding-top:10px;
  z-index: 5;
 }
+
 .header-cont {
     width:100%;
     height:51px;
@@ -72,8 +79,7 @@ a:visited{
 .mainbody{
     background-image: url('../images/circles-light.png');
     background-repeat: repeat;
-    margin-left:auto;
-    margin-right:auto;
+    margin: 0 auto;
     clear: both;
     border-top: 1px solid #cccccc;
     margin-bottom: -50px;
@@ -96,7 +102,7 @@ a:visited{
     margin-top: 50px;
     font-size: x-large;
     padding-bottom: 20px;
-    border: 1px solid #dddddd
+    border: 1px solid #dddddd;
   
 }
 
@@ -119,6 +125,11 @@ a:visited{
     float:left;
 }
 
+.mypic:hover{
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
 /* portfolio page */
 .project-name {
 background-color: #4aaaa5;
@@ -133,6 +144,7 @@ margin-top: -60px;
 /* z-index:100;  */
 width:240px;
 position:absolute;
+opacity:0.9;
 }
 
 .project-set{
@@ -142,6 +154,17 @@ position:absolute;
     display: block;
 }
 
+.proj1:hover, .proj2:hover, .proj3:hover, .proj4:hover, .proj5:hover {
+    opacity:1;
+    filter: blur(0px) saturate(1.25);
+    transition: all .75s ease;
+    transform: scale(1.05)
+
+}
+.defaultproj{
+    opacity: .4;
+    filter: blur(2px) grayscale(95%);
+}
 .toprow{
     position:relative;
     width: 600px;
@@ -151,7 +174,6 @@ position:absolute;
 .proj1 {
     position: absolute;
     top: 0px;
-    left: 5px;
 }
 
 .proj2 {
@@ -169,7 +191,6 @@ position:absolute;
 .proj3 {
     position: absolute;
     top: 0px;
-    left: 5px;
 }
 
 .proj4 {
@@ -187,7 +208,6 @@ position:absolute;
 .proj5 {
     position: absolute;
     top: 0px;
-    left: 5px;
 }
 
 /* Contact page */
@@ -200,4 +220,11 @@ button{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+button:hover {
+	background: rgba(0,0,0,0);
+	color: #4aaaa5;
+    box-shadow: inset 0 0 0 3px #4aaaa5;
+    transition: all 2s ease;
 }
