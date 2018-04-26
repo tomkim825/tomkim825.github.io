@@ -1,0 +1,70 @@
+body{
+    background-image: url('../images/circles-light.png');
+}
+
+a,
+a:visited{
+    color:#777777;
+}
+
+.box960px{
+    width:960px;
+    margin: 0px auto;
+    background-color:white;
+}
+
+.nameblock {
+    background-color: #4aaaa5;
+    color: white;
+    width: 195px;
+    height:50px;
+    padding: 2px 2px;
+    padding-top:10px;
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    /* z-index: 5; */
+   }
+
+.rightlinks{
+    float: right;
+    text-align: right;
+    padding-top: 15px;
+    font-size: large;
+}
+
+.smallheader{
+    color:#4aaaa5;
+    font-weight: bolder;
+    border-bottom: 1px solid gray;
+    width: 908px;
+    padding: 15px 0px;
+    font-size: 24px;
+}
+.content {
+   
+    width: 960px;
+    background-color: #ffffff;
+    margin:auto;
+    padding: 2px 25px;
+    /* margin-top: 50px; */
+    font-size: x-large;
+    padding-bottom: 20px;
+    border: 1px solid #dddddd;
+}
+/* sticky footer stuff */
+body, wrapper {
+    min-height:100vh;
+ }
+ 
+ .flex-fill {
+    flex:1 1 auto;
+ }
+
+/* About me page */
+
+.mypic{
+    float:left;
+}
