@@ -1,58 +1,48 @@
-<!DOCTYPE html>
-<!-- NOTE TO GRADERS: I can't get the footer to stick to the bottom -->
-<!-- I spent 3 hours debugging and when I change it, something else breaks -->
-<!-- I will leave it in the best version, but the footer is not sticky -->
+<!doctype html>
 <html lang="en-us">
-<head>
-    <title>Thomas Kim</title>
-    <link rel="stylesheet" type="text/css" href="assets\css\reset.css">
-    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
-</head>
-<body>
-    <div class="wrapper">
-          <!-- [HEADER] White header bar on top -->
-    <div class= "header-cont">
-    <div class= "header">
-           <!-- [HEADER] Teal name block div here -->
-    <div class= "nameblock">
-        <h1>Thomas Kim</h1>
-    </div>
-      <!-- [HEADER] Right side site links -->
-    <div class="nav">
-        <a href="index.html">About</a>  |  <a href="portfolio.html">Portfolio</a> |  <a href="contact.html">Contact</a>
-    </div>
-    </div>
-    </div>
-    <br>
-    <!-- [MAIN BODY] Main content is here. Mainbody has the background image -->
-            <div class="mainbody">
-                <br>
-                 <!-- [MAIN BODY] 960 px content div is here -->
-                <div class="content">
-                      <!-- [MAIN BODY] Header div to stylize about me header and add bottom border -->
-                    <div class="smallheader">
-                        <h2>About Me</h2>
-                </div>
-                    <br>    
-                     <!-- [MAIN BODY] Picture + Paragraph content here -->
-                    <p> <img class="mypic" src= "assets\images\ThomasKim.jpg" alt="picture of me" width=175 height=175 style="padding-right:15px"/> Full-Stack Developer proficient in the latest dev tools, including React.js, MongoDB, Express, Node, MySQL, AJAX, Bootstrap...etc. I like keeping up to date with the latest technologies and utilizing it to create websites that stand out from all the cookie-cutter sites cluttering the web.</p>
-                    <br>
-                    <p>Let me take your vision and bring it to life with a beautiful yet functional site built with clean semantic code. Websites should not just be eyecandy, following the latest trends, but about communicating your brand and philosophy effectively. It should give a strong sense of who you are and what you are about. That's my philosophy and why I do what I do.</p> 
-            </div>
-    <!-- I added breaks to extend the content. When I add padding, I can't get the background image to extend. I tried clearfix also -->
-<br><br><br><br><br><br><br><br><br><br>
-        <!-- [FOOTER] footer div (gray color) -->
-         <div class="footer">
-                 <!-- [FOOTER] Teal div on to add on top  -->
-            <div class="teal-bar">
 
-            </div>
-            <br>    
-            <!-- [FOOTER] copyright text -->
-            <p>Copyright &copy</p>
-            <br>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Thomas Kim</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Thomas Kim</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>About Me</h1>
+
+      <img src="assets/images/ThomasKim.jpg" class="auth-image" alt="Thomas Kim Picture">
+
+      <p>Full-Stack Developer proficient in the latest dev tools, including React.js, MongoDB, Express, Node, MySQL, AJAX, Bootstrap...etc. I like keeping up to date with the latest technologies and utilizing it to create websites that stand out from all the cookie-cutter sites cluttering the web.</p>
+
+      <p>Let me take your vision and bring it to life with a beautiful yet functional site built with clean semantic code. Websites should not just be eyecandy, following the latest trends, but about communicating your brand and philosophy effectively. It should give a strong sense of who you are and what you are about. That's my philosophy and why I do what I do.</p>
+
+      <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 
     </div>
+  </footer>
 </body>
+
 </html>
