@@ -104,7 +104,7 @@ export class Skills extends React.Component {
           style={{ display: 'flex', flexDirection:"column", alignItems: 'flex-start', justifyContent: 'start',zIndex:4, borderLeft:'1px solid white', paddingLeft:'2vw'}}>
         <p style={{color:'orangered',fontWeight:600,textDecoration: 'underline'}}>Resume </p>
  
-        <div><a href="https://github.com/tomkim825/" target="_blank"  style={{border:'1px solid white', padding: '5px', margin: '0 5px', color:'white'}}>       Click here to download   </a></div>
+        <div><a href="https://github.com/tomkim825/tomkim825.github.io/raw/master/public/ThomasKimResume.pdf" download="ThomasKimResume.pdf"  style={{border:'1px solid white', padding: '5px', margin: '0 5px', color:'white'}}>       Click here to download   </a></div>
 
 
 
