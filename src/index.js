@@ -16,8 +16,11 @@ class App extends React.Component {
       <div>                
         <header className="header nav-bar fixed-top" style={{display:'flex', justifyContent:'space-between', alignItems:'center', backgroundColor: 'rgba( 30,30,30,0.6)' }}>
           <div> 
-            <img src={avatar} style={{height:'7vmin',width: '7vmin', borderRadius:'50%'}} alt='about me'/> 
+          <div><a href="https://github.com/tomkim825/" target="_blank"  style={{padding: '5px', margin: '0 5px', color:'black'}}><i class="fab fa-github" ></i></a><a href="https://www.linkedin.com/in/thomas-c-kim/" target="_blank"  style={{ padding: '5px', margin: '0 5px', color:'royalblue'}}><i class="fab fa-linkedin"></i></a><a href="mailto:tomkim825@gmail.com" style={{padding: '5px', margin: '0 5px', color:'red'}}><i class="fas fa-envelope"></i></a>
+
+        
             <span className='header-name'> Thomas Kim</span>
+</div>
           </div>
           <p>
             <span onClick={() => this.parallax.scrollTo(0)}>About</span> <span onClick={() => this.parallax.scrollTo(1)}> | Portfolio </span><span onClick={() => this.parallax.scrollTo(2)}> | Skills </span>
@@ -25,7 +28,7 @@ class App extends React.Component {
       </header>
 
       <Parallax ref={ref => (this.parallax = ref)} pages={3}>
-        <Parallax.Layer offset={0} speed={0} factor={3} style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover'}} />
+        <Parallax.Layer offset={0} speed={0} factor={3} style={{ background: 'linear-gradient(to top, #09203f 0%, #537895 100%)'}} />
         <SectionLabels/>
 
         <Parallax.Layer

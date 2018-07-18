@@ -7,11 +7,6 @@ export class Skills extends React.Component {
     return (
 <div style={{display: 'flex', flexDirection:"row", alignItems: 'flex-start', justifyContent: 'start', width:'100vw'}}>
 <div style={{display: 'flex', flexDirection:"row", alignItems: 'flex-start', justifyContent: 'start', width:'22vw'}}>
-<Parallax.Layer
-          offset={2}
-          speed={0.75}
-          style={{ display: 'flex', flexDirection:"column", alignItems: 'flex-start', justifyContent: 'start', height: '100vh',zIndex:1, background:'rgba(33,33,33,0.8)'}}>
-        </Parallax.Layer>
 
         <Parallax.Layer
           offset={2.15}
@@ -100,7 +95,7 @@ export class Skills extends React.Component {
 <div style={{display: 'flex', flexDirection:"row", alignItems: 'flex-start', justifyContent: 'start'}}>
 <Parallax.Layer
           offset={2.15}
-          speed={0.3}
+          speed={1.5}
           style={{ display: 'flex', flexDirection:"column", alignItems: 'flex-start', justifyContent: 'start',zIndex:4, borderLeft:'1px solid white', paddingLeft:'2vw'}}>
         <p style={{color:'orangered',fontWeight:600,textDecoration: 'underline'}}>Resume </p>
  
