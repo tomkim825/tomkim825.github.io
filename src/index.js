@@ -14,7 +14,7 @@ class App extends React.Component {
   render() {
     return (
       <div>                
-        <header className="header nav-bar fixed-top" style={{display:'flex', justifyContent:'space-between', alignItems:'center', backgroundColor: 'rgba( 30,30,30,0.6)' }}>
+        <header className="header nav-bar fixed-top" style={{display:'flex', justifyContent:'space-between', alignItems:'center', backgroundColor: 'rgba( 3,3,3,0.7)' }}>
           <div> 
           <div><a href="https://github.com/tomkim825/" target="_blank"  style={{padding: '5px', margin: '0 5px', color:'#517fa4'}}><i class="fab icon fa-github" ></i></a>
           <a href="https://www.linkedin.com/in/thomas-c-kim/" target="_blank"  style={{ padding: '5px', margin: '0 5px', color:'#517fa4'}}><i class="fab icon fa-linkedin"></i></a>
