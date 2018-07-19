@@ -20,6 +20,11 @@ body{
     box-shadow: 0 8px 6px -6px black;
 }
 
+.icon:hover, 
+.navButton:hover{
+  color:#95bfe8;
+}
+
 .header-name{
     margin-top: 0vh;
     font-size: 5vmin;

@@ -16,12 +16,14 @@ class App extends React.Component {
       <div>                
         <header className="header nav-bar fixed-top" style={{display:'flex', justifyContent:'space-between', alignItems:'center', backgroundColor: 'rgba( 30,30,30,0.6)' }}>
           <div> 
-          <div><a href="https://github.com/tomkim825/" target="_blank"  style={{padding: '5px', margin: '0 5px', color:'black'}}><i class="fab fa-github" ></i></a><a href="https://www.linkedin.com/in/thomas-c-kim/" target="_blank"  style={{ padding: '5px', margin: '0 5px', color:'royalblue'}}><i class="fab fa-linkedin"></i></a><a href="mailto:tomkim825@gmail.com" style={{padding: '5px', margin: '0 5px', color:'red'}}><i class="fas fa-envelope"></i></a>
+          <div><a href="https://github.com/tomkim825/" target="_blank"  style={{padding: '5px', margin: '0 5px', color:'#517fa4'}}><i class="fab icon fa-github" ></i></a>
+          <a href="https://www.linkedin.com/in/thomas-c-kim/" target="_blank"  style={{ padding: '5px', margin: '0 5px', color:'#517fa4'}}><i class="fab icon fa-linkedin"></i></a>
+          <a href="mailto:tomkim825@gmail.com" style={{padding: '5px', margin: '0 5px', color:'#517fa4'}}><i class="fas icon  fa-envelope"></i></a>
             <span style={{fontWeight:600}}> Thomas Kim</span>
           </div>
           </div>
           <span>
-            <span onClick={() => this.parallax.scrollTo(0)}>About</span> <span onClick={() => this.parallax.scrollTo(1)}> | Portfolio </span><span onClick={() => this.parallax.scrollTo(2)}> | Skills </span>
+            <span className = 'navButton' onClick={() => this.parallax.scrollTo(0)}>About</span> <span> | </span><span  className = 'navButton'  onClick={() => this.parallax.scrollTo(1)}> Portfolio </span><span> | </span><span  className = 'navButton'  onClick={() => this.parallax.scrollTo(2)}> Skills </span>
           </span>
       </header>
 
