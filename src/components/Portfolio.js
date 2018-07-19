@@ -1,5 +1,5 @@
 import React from 'react';
-import { Parallax } from 'react-spring';
+import { Parallax } from 'react-spring/dist/react-spring';
 import '../index.css';
 
 
@@ -8,7 +8,7 @@ export class Portfolio extends React.Component {
     return (
 <div>
         <Parallax.Layer
-          offset={1.115}
+          offset={1.135}
           speed={0.1}
           style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', flexWrap: 'wrap', padding:' 0 5%' }}>
           <div class="flip-container" ontouchstart="this.classList.toggle('hover');">

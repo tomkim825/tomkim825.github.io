@@ -11,7 +11,7 @@ body{
   }
 
 .header{
-    height: 6vh;
+    height: 8vh;
     padding: 0 1%;
     align-content: center;
    width: 100%;
@@ -129,7 +129,7 @@ h2{
   background: rgba(33, 33, 33, 0.8);
 }
 .bottom{
-    margin-top:-2vh; 
+    margin-top:0vh; 
 }
 
 
