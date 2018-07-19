@@ -9,7 +9,7 @@ export class Portfolio extends React.Component {
 <div>
         <Parallax.Layer
           offset={1.135}
-          speed={0.1}
+          speed={0.25}
           style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', flexWrap: 'wrap', padding:' 0 5%' }}>
           <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">

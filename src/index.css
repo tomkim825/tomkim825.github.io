@@ -40,8 +40,8 @@ body{
   }
 
 .flip-container, .front, .back {
-  width: 58vmin;
-  height: 33vmin;
+  width: 57vmin;
+  height: 29vmin;
   border-radius: 1%;
   margin: 0.75%;
 }
@@ -50,10 +50,10 @@ body{
   box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.66)
 }
 
-@media screen and (max-width: 1024){
+@media screen and (max-width: 768px){
   .flip-container, .front, .back {
-    width: 50vh;
-    height: 30vh;
+    width: 80vw;
+    height: 45vw;
   }
   .bottom{
     display:none;
@@ -64,19 +64,29 @@ li{
 }
   }
 
+  @media screen and (min-width: 769px) and (max-width: 1024px){
+    .flip-container, .front, .back {
+      width: 40vh;
+      height: 25vh;
+    }
+  li{
+    width: 0.5vmin;
+    transform: scale(0.25);
+  }
+    }
 
 
 .flipper {
-  -webkit-transition: 0.6s;
+  -webkit-transition: 0.9s;
   -webkit-transform-style: preserve-3d;
 
-  -moz-transition: 0.6s;
+  -moz-transition: 0.9s;
   -moz-transform-style: preserve-3d;
 
--o-transition: 0.6s;
+-o-transition: 0.9s;
   -o-transform-style: preserve-3d;
 
-  transition: 0.6s;
+  transition: 0.9s;
   transform-style: preserve-3d;
 
   position: relative;

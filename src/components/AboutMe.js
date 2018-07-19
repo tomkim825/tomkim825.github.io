@@ -12,7 +12,7 @@ export class AboutMe extends React.Component {
            offset={0}
           speed={0.75}
           style={{ display: 'flex', flexDirection:"column", alignContent: 'center', justifyContent: 'center',zIndex:5,padding:'0 5%', marginTop:'-2%'}}>
-              <img src={avatar} style={{height:'20vmin',width: '20vmin', borderRadius:'50%', marginLeft:'45%', marginBottom:'5%', boxShadow: '0px 0px 9px 1px rgba(0,0,0,0.66)'}} alt='about me'/> 
+              <img src={avatar} style={{height:'20vmin',width: '20vmin', borderRadius:'50%', border: '5px solid  #487389', marginLeft:'45%', marginBottom:'5%', boxShadow: '0px 0px 9px 1px rgba(0,0,0,0.33)'}} alt='about me'/> 
           <p style={{marginBottom:'7vmin', fontSize:'9vmin', fontWeight:600}}>Hi! I'm Thomas, Full Stack Developer</p>
           {/* <div><a href="https://github.com/tomkim825/" target="_blank"  style={{border:'1px solid white', padding: '5px', margin: '0 5px', color:'black'}}><i class="fab fa-github" ></i> Github    </a><a href="https://www.linkedin.com/in/thomas-c-kim/" target="_blank"  style={{border:'1px solid white', padding: '5px', margin: '0 5px', color:'blue'}}><i class="fab fa-linkedin"></i> LinkedIn </a><a href="mailto:tomkim825@gmail.com" style={{border:'1px solid white', padding: '5px', margin: '0 5px', color:'red'}}><i class="fas fa-envelope"></i> Email Me  </a></div> */}
 
