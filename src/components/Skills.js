@@ -5,12 +5,12 @@ import '../index.css';
 export class Skills extends React.Component {
   render() {
     return (
-<div style={{display: 'flex', flexDirection:"row", alignItems: 'flex-start', justifyContent: 'start', width:'100vw'}}>
+<div style={{display: 'flex', flexDirection:"row", alignItems: 'flex-start', justifyContent: 'start', width:'100vw', padding:' 0 5%'}}>
 <div style={{display: 'flex', flexDirection:"row", alignItems: 'flex-start', justifyContent: 'start', width:'22vw'}}>
 
         <Parallax.Layer
           offset={2.15}
-          speed={0.8}
+          speed={0.2}
           style={{ display: 'flex', flexDirection:"column", alignItems: 'flex-start', justifyContent: 'start',zIndex:2}}>
           <p style={{color:'orangered',fontWeight:600,textDecoration: 'underline'}}> Front End </p>
           <ul class="list-inline list-icons">
@@ -66,7 +66,7 @@ export class Skills extends React.Component {
         
         <Parallax.Layer
           offset={2.45}
-          speed={0.4}
+          speed={1}
           style={{ display: 'flex', flexDirection:"column", alignItems: 'flex-start', justifyContent: 'start',zIndex:2}}>
           <p style={{color:'orangered',fontWeight:600,textDecoration: 'underline'}}>Dev Tools </p>
           <ul class="list-inline list-icons">
