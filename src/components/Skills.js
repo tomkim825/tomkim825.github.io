@@ -92,9 +92,9 @@ export class Skills extends React.Component {
         </Parallax.Layer>
 
 <Parallax.Layer
-          offset={2.15}
+          offset={2.6}
           speed={1.5}
-          style={{ display: 'flex', flexDirection:"column", alignItems: 'flex-start', justifyContent: 'start',zIndex:4, borderLeft:'1px solid white', paddingLeft:'2vw'}}>
+          style={{ display: 'flex', flexDirection:"column", alignItems: 'flex-start', justifyContent: 'start',zIndex:4}}>
         <p style={{color:'orangered',fontWeight:600,textDecoration: 'underline'}}>Resume </p>
  
         <div><a href="https://github.com/tomkim825/tomkim825.github.io/raw/master/ThomasKimResume.pdf" style={{border:'1px solid white', padding: '5px', margin: '0 5px', color:'white'}}>       Click here to download   </a></div>
