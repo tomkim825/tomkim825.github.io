@@ -6,7 +6,7 @@ export class Skills extends React.Component {
   render() {
     return (
 <div style={{display: 'flex', flexDirection:"row", alignItems: 'flex-start', justifyContent: 'start', width:'100vw', padding:' 0 5%'}}>
-<div style={{display: 'flex', flexDirection:"row", alignItems: 'flex-start', justifyContent: 'start', width:'22vw'}}>
+<div className= 'tech' style={{display: 'flex', flexDirection:"row", alignItems: 'flex-start', justifyContent: 'start', width:'45vw'}}>
 
         <Parallax.Layer
           offset={2.15}
