@@ -10,6 +10,10 @@ body{
     color:white;
   }
 
+  body:hover{
+    cursor: pointer;  
+}
+
 .header{
     height: 8vh;
     padding: 0 1%;
@@ -32,7 +36,9 @@ body{
 }
 /* original on top */
 .flip-container:hover .flipper,  
-.flip-container.hover .flipper {
+.flip-container.hover .flipper,
+.flip-container:active .flipper,  
+.flip-container.active .flipper {
       -webkit-transform: rotateY(180deg);
       -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
@@ -44,6 +50,7 @@ body{
   height: 29vmin;
   border-radius: 1%;
   margin: 0.75%;
+  font-size:2.5vmin;
 }
 
 .front, .back{
@@ -54,6 +61,7 @@ body{
   .flip-container, .front, .back {
     width: 80vw;
     height: 45vw;
+    font-size:2.5vmin;
   }
   .bottom{
     display:none;
@@ -71,6 +79,7 @@ li{
     .flip-container, .front, .back {
       width: 40vh;
       height: 25vh;
+      font-size:2.5vmin;
     }
   li{
     width: 0.5vmin;
@@ -121,7 +130,7 @@ h2{
 }
 
 .work2 {
-    background: rgba(3, 3, 3, 0.8) url(https://github.com/tomkim825/meishi/blob/master/assets/images/screenshot2.png?raw=true) 0 0 no-repeat;
+    background: rgba(3, 3, 3, 0.8) url(https://github.com/tomkim825/meishi/blob/master/demo.gif?raw=true) 0 0 no-repeat;
     background-position: center;
     background-size: contain; 
   }
@@ -171,6 +180,7 @@ margin: auto;
   text-align: center;
   padding: 20px 20px;
 line-height: 2em;
+font-size:2.5vmin;
 }
 
 li:hover{
