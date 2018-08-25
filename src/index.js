@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Parallax } from 'react-spring/dist/react-spring'
-import Background from './assets/img/Background.JPG';
-import avatar from './assets/img/ThomasKim.jpg';
 import './index.css';
 import { SectionLabels } from './components/SectionLabels';
 import { AboutMe } from './components/AboutMe';
