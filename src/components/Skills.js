@@ -12,24 +12,24 @@ export class Skills extends React.Component {
           speed={0.2}
           style={{ display: 'flex', flexDirection:"column", alignItems: 'flex-start', justifyContent: 'start',zIndex:2}}>
           <p style={{color:'orangered',fontWeight:600,textDecoration: 'underline'}}> Front End </p>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicon-html5-plain-wordmark"></i>
+          <ul className="list-inline list-icons">
+            <li className="list-inline-item">
+              <i className="devicon-html5-plain-wordmark"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="devicon-css3-plain-wordmark"></i>
+            <li className="list-inline-item">
+              <i className="devicon-css3-plain-wordmark"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="devicon-javascript-plain"></i>
+            <li className="list-inline-item">
+              <i className="devicon-javascript-plain"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="devicon-jquery-plain-wordmark"></i>
+            <li className="list-inline-item">
+              <i className="devicon-jquery-plain-wordmark"></i>
               </li>
-              <li class="list-inline-item">
-              <i class="devicon-bootstrap-plain-wordmark"></i>
+              <li className="list-inline-item">
+              <i className="devicon-bootstrap-plain-wordmark"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="devicon-react-original-wordmark"></i>
+            <li className="list-inline-item">
+              <i className="devicon-react-original-wordmark"></i>
             </li>
             </ul>
         </Parallax.Layer>
@@ -39,25 +39,25 @@ export class Skills extends React.Component {
           speed={0.6}
           style={{ display: 'flex', flexDirection:"column", alignItems: 'flex-start', justifyContent: 'start',zIndex:2}}>
           <p style={{color: 'orangered',fontWeight:600, textDecoration: 'underline'}}> Server Side </p>
-          <ul class="list-inline list-icons">
+          <ul className="list-inline list-icons">
             
-            <li class="list-inline-item">
-              <i class="devicon-mysql-plain-wordmark"></i>
+            <li className="list-inline-item">
+              <i className="devicon-mysql-plain-wordmark"></i>
               </li>
-            <li class="list-inline-item">
-              <i class="devicon-mongodb-plain-wordmark"></i>
+            <li className="list-inline-item">
+              <i className="devicon-mongodb-plain-wordmark"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="devicon-express-original-wordmark"></i>
+            <li className="list-inline-item">
+              <i className="devicon-express-original-wordmark"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="devicon-nodejs-plain-wordmark"></i>
+            <li className="list-inline-item">
+              <i className="devicon-nodejs-plain-wordmark"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="devicon-heroku-original-wordmark"></i>
+            <li className="list-inline-item">
+              <i className="devicon-heroku-original-wordmark"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="devicon-sequelize-plain-wordmark"></i>
+            <li className="list-inline-item">
+              <i className="devicon-sequelize-plain-wordmark"></i>
             </li>
             </ul>
         </Parallax.Layer>
@@ -68,25 +68,25 @@ export class Skills extends React.Component {
           speed={1}
           style={{ display: 'flex', flexDirection:"column", alignItems: 'flex-start', justifyContent: 'start',zIndex:2}}>
           <p style={{color:'orangered',fontWeight:600,textDecoration: 'underline'}}>Dev Tools </p>
-          <ul class="list-inline list-icons">
+          <ul className="list-inline list-icons">
             
-            <li class="list-inline-item">
-            <i class="devicon-visualstudio-plain-wordmark"></i>
+            <li className="list-inline-item">
+            <i className="devicon-visualstudio-plain-wordmark"></i>
               </li>
-            <li class="list-inline-item">
-            <i class="devicon-firefox-plain-wordmark"></i>
+            <li className="list-inline-item">
+            <i className="devicon-firefox-plain-wordmark"></i>
             </li>
-            <li class="list-inline-item">
-            <i class="devicon-chrome-plain-wordmark"></i>
+            <li className="list-inline-item">
+            <i className="devicon-chrome-plain-wordmark"></i>
             </li>
-            <li class="list-inline-item">
-            <i class="devicon-github-plain-wordmark"></i>
+            <li className="list-inline-item">
+            <i className="devicon-github-plain-wordmark"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="devicon-git-plain-wordmark"></i>
+            <li className="list-inline-item">
+              <i className="devicon-git-plain-wordmark"></i>
             </li>
-            <li class="list-inline-item">
-            <i class="devicon-slack-plain-wordmark"></i>
+            <li className="list-inline-item">
+            <i className="devicon-slack-plain-wordmark"></i>
             </li>
             </ul>
         </Parallax.Layer>

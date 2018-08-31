@@ -2,9 +2,24 @@ import React from 'react';
 import { Parallax } from 'react-spring/dist/react-spring';
 import '../index.css';
 import avatar from '../assets/img/ThomasKim.jpg';
+import firebase from '../config/firebase.js';
 
 
 export class AboutMe extends React.Component {
+    constructor (props) {
+        super(props);
+    this.state = {
+        blurb: 'MERN-stack developer (MongoDB/MySQL Express React Node). I enjoy making web apps in REACT. Currently publishing my PWA to an app store.'
+    }
+}
+componentDidMount(){
+    const itemsRef = firebase.database().ref();
+    itemsRef.on('value', (snapshot) => {
+    var blurb = snapshot.val().blurb;
+    this.setState({blurb});
+    })}
+
+
   render() {
     return (
 <div>
@@ -24,10 +39,7 @@ export class AboutMe extends React.Component {
           offset={0}
           speed={0.25}
           style={{ display: 'flex', flexDirection:"column", alignContent: 'flex-start', justifyContent: 'flex-end',zIndex:4,padding:'0 4%'}}>
-          <p style={{marginBottom:'15vmin'}}>MERN-stack developer (MongoDB/MySQL Express React Node). I enjoy making web apps in REACT. <br/>Currenlty working on publishing my PWA to an app store.
-          {/* <br/>
-          <br/><small>I have many side hobbies. I took this picture at Lake Moraine while visiting Banff, Canada.</small> */}
-          </p>
+          <p style={{marginBottom:'15vmin'}}> {this.state.blurb}          </p>
 </Parallax.Layer>
 </div>
     )}}

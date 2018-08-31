@@ -14,9 +14,9 @@ class App extends React.Component {
       <div>                
         <header className="header nav-bar fixed-top" style={{display:'flex', justifyContent:'space-between', alignItems:'center', backgroundColor: 'rgba( 3,3,3,0.7)' }}>
           <div> 
-          <div><a href="https://github.com/tomkim825/" target="_blank"  style={{padding: '5px', margin: '0 5px', color:'#517fa4'}}><i class="fab icon fa-github" ></i></a>
-          <a href="https://www.linkedin.com/in/thomas-c-kim/" target="_blank"  style={{ padding: '5px', margin: '0 5px', color:'#517fa4'}}><i class="fab icon fa-linkedin"></i></a>
-          <a href="mailto:tomkim825@gmail.com" style={{padding: '5px', margin: '0 5px', color:'#517fa4'}}><i class="fas icon  fa-envelope"></i></a>
+          <div><a href="https://github.com/tomkim825/" target="_blank" rel="noopener noreferrer" style={{padding: '5px', margin: '0 5px', color:'#517fa4'}}><i className="fab icon fa-github" ></i></a>
+          <a href="https://www.linkedin.com/in/thomas-c-kim/" target="_blank" rel="noopener noreferrer" style={{ padding: '5px', margin: '0 5px', color:'#517fa4'}}><i className="fab icon fa-linkedin"></i></a>
+          <a href="mailto:tomkim825@gmail.com" style={{padding: '5px', margin: '0 5px', color:'#517fa4'}}><i className="fas icon  fa-envelope"></i></a>
             <span style={{fontWeight:600}}> Thomas Kim</span>
           </div>
           </div>

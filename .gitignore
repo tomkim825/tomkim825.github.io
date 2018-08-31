@@ -6,6 +6,9 @@
 # testing
 /coverage
 
+#subscriptionkey
+/src/config
+
 # production
 /build
 
