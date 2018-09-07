@@ -56,7 +56,7 @@ body{
     height: 29vmin;
     border-radius: 1%;
     margin: 0.75%;
-    font-size:2.5vmin;
+    font-size:2vmin;
   }
 
 .front, .back{
@@ -67,7 +67,7 @@ body{
   .flip-container, .front, .back {
     width: 48vw;
     height: 18vw;
-    font-size:2.5vmin;
+    font-size:2vmin;
   }
   .bottom{
     display:none;
@@ -84,7 +84,7 @@ li{
     .flip-container, .front, .back {
       width: 80vw;
       height: 50vw;
-      font-size:2.5vmin;
+      font-size:2vmin;
     }
     .bottom{
       display:none;
@@ -102,7 +102,7 @@ li{
     .flip-container, .front, .back {
       width: 40vh;
       height: 25vh;
-      font-size:2.5vmin;
+      font-size:2vmin;
     }
   li{
     width: 0.5vmin;
@@ -203,7 +203,7 @@ margin: auto;
   text-align: center;
   padding: 20px 20px;
 line-height: 2em;
-font-size:2.5vmin;
+font-size:2.2vmin;
 }
 
 li:hover{
