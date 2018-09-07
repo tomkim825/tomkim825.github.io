@@ -9,7 +9,7 @@ export class AboutMe extends React.Component {
     constructor (props) {
         super(props);
     this.state = {
-        blurb: 'MERN-stack developer (MongoDB/MySQL Express React Node). I enjoy making web apps in REACT. Currently publishing my PWA to an app store.'
+        blurb: 'MERN-stack developer (MongoDB/MySQL Express React Node). I enjoy making PWAs in REACT.'
     }
 }
 componentDidMount(){

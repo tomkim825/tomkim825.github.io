@@ -17,7 +17,7 @@ export class Portfolio extends React.Component {
               <div className="back">
                 <p>Mobile-First PWA using React : 
                 <br/>Does your child look more like mom or dad? Find out w/facial recognition
-                <br/><span><a href="https://github.com/tomkim825/which-parent" target="_blank" rel="noopener noreferrer">Github Repo</a></span> <span><a href="https://tomkim825.github.io/which-parent/" target="_blank" rel="noopener noreferrer" style={{color:'red'}}>Demo</a></span></p>
+                <br/><span><a href="https://github.com/tomkim825/which-parent" target="_blank" rel="noopener noreferrer">Github Repo</a></span> <span><a href="https://tomkim825.github.io/which-parent/" target="_blank" rel="noopener noreferrer" style={{color:'red'}}>Demo</a></span><span><a href="https://www.microsoft.com/en-us/p/mom-or-dad-which-parent/9ncm6gg7vs7t" target="_blank" rel="noopener noreferrer">Published in Windows App store</a></span> </p>
               </div>
             </div>
           </div>
