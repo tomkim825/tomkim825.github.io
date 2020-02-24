@@ -52,7 +52,7 @@ body{
 
   
   .flip-container, .front, .back {
-    width: 57vmin;
+    width: 65vmin;
     height: 29vmin;
     border-radius: 1%;
     margin: 0.75%;
@@ -158,19 +158,19 @@ h2{
     background-size: contain; 
   }
 
-  .work4 {
+  .work5 {
     background: rgba(3, 3, 3, 0.8) url(https://github.com/tomkim825/burger/raw/master/public/assets/img/burger.gif) 0 0 no-repeat;
     background-position: center;
     background-size: contain; 
   }
 
-  .work5 {
+  .work6 {
     background: rgba(3, 3, 3, 0.8) url(https://raw.githubusercontent.com/tomkim825/GifGetter/master/gifgetter.gif) 0 0 no-repeat;
     background-position: center;
     background-size: contain; 
   }
-  .work6 {
-    background: rgba(3, 3, 3, 0.8) url(https://raw.githubusercontent.com/tomkim825/TrainTime/master/demo.gif) 0 0 no-repeat;
+  .work4 {
+    background: rgba(3, 3, 3, 0.8) url('https://github.com/tomkim825/Pivot-Points/raw/master/demo.gif') 0 0 no-repeat;
     background-position: center;
     background-size: contain; 
   }
@@ -207,12 +207,13 @@ font-size:2.2vmin;
 }
 
 li:hover{
-    transform: scale(2);
+    transform: scale(3);
     color:orangered
 }
 
 li{
   width: 3vw;
   transform: scale(1.5);
+  margin: 0 1.5vmax;
 
 }

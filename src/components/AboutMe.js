@@ -2,22 +2,22 @@ import React from 'react';
 import { Parallax } from 'react-spring/dist/react-spring';
 import '../index.css';
 import avatar from '../assets/img/ThomasKim.jpg';
-import firebase from '../config/firebase.js';
+// import firebase from '../config/firebase.js';
 
 
 export class AboutMe extends React.Component {
     constructor (props) {
         super(props);
     this.state = {
-        blurb: 'MERN-stack developer (MongoDB/MySQL Express React Node). I enjoy making PWAs in REACT.'
+        blurb: 'Front-End focused MERN-stack developer (MongoDB/MySQL Express React Node).'
     }
 }
-componentDidMount(){
-    const itemsRef = firebase.database().ref();
-    itemsRef.on('value', (snapshot) => {
-    var blurb = snapshot.val().blurb;
-    this.setState({blurb});
-    })}
+// componentDidMount(){
+//     const itemsRef = firebase.database().ref();
+//     itemsRef.on('value', (snapshot) => {
+//     var blurb = snapshot.val().blurb;
+//     this.setState({blurb});
+//     })}
 
 
   render() {

@@ -20,6 +20,9 @@ export class Skills extends React.Component {
               <i className="devicon-css3-plain-wordmark"></i>
             </li>
             <li className="list-inline-item">
+            <i class="devicon-sass-original"></i>
+            </li>
+            <li className="list-inline-item">
               <i className="devicon-javascript-plain"></i>
             </li>
             <li className="list-inline-item">
