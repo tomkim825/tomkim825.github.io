@@ -4,6 +4,7 @@ import { Parallax } from 'react-spring/dist/react-spring'
 import './index.css';
 import { SectionLabels } from './components/SectionLabels';
 import { AboutMe } from './components/AboutMe';
+import { Experience } from './components/Experience';
 import { Portfolio } from './components/Portfolio';
 import { Skills } from './components/Skills';
 
@@ -11,26 +12,32 @@ import { Skills } from './components/Skills';
 class App extends React.Component {
   render() {
     return (
-      <div>                
+      <div>
         <header className="header nav-bar fixed-top" style={{display:'flex', justifyContent:'space-between', alignItems:'center', backgroundColor: 'rgba( 3,3,3,0.7)' }}>
-          <div> 
-          <div><a href="https://github.com/tomkim825/" target="_blank" rel="noopener noreferrer" style={{padding: '5px', margin: '0 5px', color:'#517fa4'}}><i className="fab icon fa-github" ></i></a>
-          <a href="https://www.linkedin.com/in/thomas-c-kim/" target="_blank" rel="noopener noreferrer" style={{ padding: '5px', margin: '0 5px', color:'#517fa4'}}><i className="fab icon fa-linkedin"></i></a>
-          <a href="mailto:tomkim825@gmail.com" style={{padding: '5px', margin: '0 5px', color:'#517fa4'}}><i className="fas icon  fa-envelope"></i></a>
-            <span style={{fontWeight:600}}> Thomas Kim</span>
+          <div>
+            <div>
+              <a href="https://github.com/tomkim825/" target="_blank" rel="noopener noreferrer" style={{padding: '5px', margin: '0 5px', color:'#517fa4'}}><i className="fab icon fa-github" ></i></a>
+              <a href="https://www.linkedin.com/in/thomas-c-kim/" target="_blank" rel="noopener noreferrer" style={{ padding: '5px', margin: '0 5px', color:'#517fa4'}}><i className="fab icon fa-linkedin"></i></a>
+              <a href="mailto:tomkim825@gmail.com" style={{padding: '5px', margin: '0 5px', color:'#517fa4'}}><i className="fas icon  fa-envelope"></i></a>
+              <span style={{fontWeight:600}}> Thomas Kim</span>
+            </div>
           </div>
-          </div>
+
           <span>
-            <span className = 'navButton' onClick={() => this.parallax.scrollTo(0)}>About</span> <span> | </span><span  className = 'navButton'  onClick={() => this.parallax.scrollTo(1)}> Portfolio </span><span> | </span><span  className = 'navButton'  onClick={() => this.parallax.scrollTo(2)}> Skills </span>
+            <span className = 'navButton' onClick={() => this.parallax.scrollTo(0)}>About</span> <span> | </span>
+            <span className = 'navButton' onClick={() => this.parallax.scrollTo(1)}>Experience </span><span> | </span>
+            <span className = 'navButton' onClick={() => this.parallax.scrollTo(2)}>Projects </span><span> | </span>
+            <span className = 'navButton' onClick={() => this.parallax.scrollTo(3)}>Skills </span>
           </span>
-      </header>
+        </header>
 
-      <Parallax ref={ref => (this.parallax = ref)} pages={3}>
+      <Parallax ref={ref => (this.parallax = ref)} pages={4}>
 
-        <Parallax.Layer offset={0} speed={0} factor={3} style={{ background: 'linear-gradient(to top, #243949 0%, #517fa4 100%)'}} />
+        <Parallax.Layer offset={0} speed={0} factor={4} style={{ background: 'linear-gradient(to top, #243949 0%, #517fa4 100%)'}} />
 
         <SectionLabels/>
         <AboutMe/>
+        <Experience/>
         <Portfolio/>
         <Skills/>
 

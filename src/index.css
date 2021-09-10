@@ -1,115 +1,149 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
-body{
-	font-family: 'Work Sans', sans-serif;
-    font-size:3.5vmin;
-    font-weight: 300;
-    text-align:center;
-    text-decoration: none;
-    overflow-y: hidden;
-    color:white;
-  }
-
-  body:hover{
-    cursor: pointer;  
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3.5vmin;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  overflow-y: hidden;
+  color: white;
 }
 
-.header{
-    height: 8vh;
-    padding: 0 1%;
-    align-content: center;
-   width: 100%;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
+body:hover {
+  cursor: pointer;
 }
 
-.avatar{
+.header {
+  height: 8vh;
+  padding: 0 1%;
+  align-content: center;
+  width: 100%;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.avatar {
   margin: 0 auto;
 }
 
-.icon:hover, 
-.navButton:hover{
-  color:#95bfe8;
+.icon:hover,
+.navButton:hover {
+  color: #95bfe8;
 }
 
-.header-name{
-    margin-top: 0vh;
-    font-size: 5vmin;
-    font-weight: 600;
+.header-name {
+  margin-top: 0vh;
+  font-size: 5vmin;
+  font-weight: 600;
 }
 /* original on top */
-.flip-container:hover .flipper,  
+.flip-container:hover .flipper,
 .flip-container.hover .flipper,
-.flip-container:active .flipper,  
+.flip-container:active .flipper,
 .flip-container.active .flipper {
-      -webkit-transform: rotateY(180deg);
-      -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
-      transform: rotateY(180deg);
-  }
-
-
-  
-  .flip-container, .front, .back {
-    width: 65vmin;
-    height: 29vmin;
-    border-radius: 1%;
-    margin: 0.75%;
-    font-size:2vmin;
-  }
-
-.front, .back{
-  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.66)
+  transform: rotateY(180deg);
 }
 
-@media screen and  (orientation:landscape) and (max-width: 768px){
-  .flip-container, .front, .back {
+.flip-container,
+.front,
+.back {
+  width: 65vmin;
+  height: 29vmin;
+  border-radius: 1%;
+  margin: 0.75%;
+  font-size: 2vmin;
+}
+
+.exp_title {
+  font-size: 3vmin;
+  text-transform: uppercase;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+
+.exp_company {
+  font-size: 2.5vmin;
+  color: #ddd;
+  text-transform: uppercase;
+}
+.exp_date{
+  font-size: 2vmin;
+  color: #ddd;
+}
+.exp_text{
+  margin-top: 2.6vmin;
+  font-size: 1.8vmin;
+  color: #fff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.front,
+.back {
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.66);
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .flip-container,
+  .front,
+  .back {
     width: 48vw;
     height: 18vw;
-    font-size:2vmin;
+    font-size: 2vmin;
   }
-  .bottom{
-    display:none;
+  .bottom {
+    display: none;
   }
-li{
-  width: 0.5vmin;
-  transform: scale(0.25);
-}
-.tech{
-  width: 40vw;
-}
-  }
-  @media screen and  (orientation:portrait) and (max-width: 768px){
-    .flip-container, .front, .back {
-      width: 80vw;
-      height: 50vw;
-      font-size:2vmin;
-    }
-    .bottom{
-      display:none;
-    }
-  li{
+  li {
     width: 0.5vmin;
     transform: scale(0.25);
   }
-  .tech{
+  .tech {
     width: 40vw;
   }
-    }
-
-  @media screen and (min-width: 769px) and (max-width: 1024px){
-    .flip-container, .front, .back {
-      width: 40vh;
-      height: 25vh;
-      font-size:2vmin;
-    }
-  li{
+}
+@media screen and (orientation: portrait) and (max-width: 768px) {
+  .flip-container,
+  .front,
+  .back {
+    width: 80vw;
+    height: 50vw;
+    font-size: 2vmin;
+  }
+  .bottom {
+    display: none;
+  }
+  li {
     width: 0.5vmin;
     transform: scale(0.25);
   }
-    }
+  .tech {
+    width: 40vw;
+  }
+}
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .flip-container,
+  .front,
+  .back {
+    width: 40vh;
+    height: 25vh;
+    font-size: 2vmin;
+  }
+  li {
+    width: 0.5vmin;
+    transform: scale(0.25);
+  }
+}
 
 .flipper {
   -webkit-transition: 0.9s;
@@ -118,7 +152,7 @@ li{
   -moz-transition: 0.9s;
   -moz-transform-style: preserve-3d;
 
--o-transition: 0.9s;
+  -o-transition: 0.9s;
   -o-transform-style: preserve-3d;
 
   transition: 0.9s;
@@ -127,11 +161,11 @@ li{
   position: relative;
 }
 
-
-.front, .back {
+.front,
+.back {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
--o-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
   backface-visibility: hidden;
 
   position: absolute;
@@ -139,81 +173,74 @@ li{
   left: 0;
 }
 
-h6{
-   font-size:  2vmin
+h6 {
+  font-size: 2vmin;
 }
 
-h2{
-    font-size:  4vmin
- }
+h2 {
+  font-size: 4vmin;
+}
 
 .work2 {
-  background: rgba(3, 3, 3, 0.8) url(https://raw.githubusercontent.com/tomkim825/Project1-FaceAPI/master/project_1.gif) 0 0 no-repeat;
-  background-size: cover 
+  background: rgba(3, 3, 3, 0.8) url(https://raw.githubusercontent.com/tomkim825/Project1-FaceAPI/master/project_1.gif)
+    0 0 no-repeat;
+  background-size: cover;
 }
 
 .work3 {
-    background: rgba(3, 3, 3, 0.8) url(https://github.com/tomkim825/meishi/blob/master/demo.gif?raw=true) 0 0 no-repeat;
-    background-position: center;
-    background-size: contain; 
-  }
+  background: rgba(3, 3, 3, 0.8) url(https://github.com/tomkim825/meishi/blob/master/demo.gif?raw=true) 0 0 no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 
-  .work5 {
-    background: rgba(3, 3, 3, 0.8) url(https://github.com/tomkim825/burger/raw/master/public/assets/img/burger.gif) 0 0 no-repeat;
-    background-position: center;
-    background-size: contain; 
-  }
-
-  .work6 {
-    background: rgba(3, 3, 3, 0.8) url(https://raw.githubusercontent.com/tomkim825/GifGetter/master/gifgetter.gif) 0 0 no-repeat;
-    background-position: center;
-    background-size: contain; 
-  }
+.work4 {
+  background: rgba(3, 3, 3, 0.8) url('https://github.com/tomkim825/Pivot-Points/raw/master/demo.gif') 0 0 no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@media screen and (min-width: 1024px) and (max-width: 1460px) {
   .work4 {
-    background: rgba(3, 3, 3, 0.8) url('https://github.com/tomkim825/Pivot-Points/raw/master/demo.gif') 0 0 no-repeat;
-    background-position: center;
-    background-size: contain; 
+    display: none;
   }
-  .work1 {
-    background: rgba(3, 3, 3, 0.8) url(https://github.com/tomkim825/which-parent/blob/master/demo.gif?raw=true) 0 0 no-repeat;
-    background-position: center;
-    background-size: contain; 
-  }
+}
+.work1 {
+  background: rgba(3, 3, 3, 0.8) url(https://github.com/tomkim825/which-parent/blob/master/demo.gif?raw=true) 0 0
+    no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 
 .back {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
--o-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   background: rgba(33, 33, 33, 0.8);
 }
-.bottom{
-    margin-top:0vh; 
+.bottom {
+  margin-top: 0vh;
 }
-
-
 
 .back p {
   /* position: absolute; */
-margin: auto;
+  margin: auto;
   /* bottom: 40px; */
   left: 0;
   right: 0;
-  top:auto;
+  top: auto;
   text-align: center;
   padding: 20px 20px;
-line-height: 2em;
-font-size:2.2vmin;
+  line-height: 2em;
+  font-size: 2.2vmin;
 }
 
-li:hover{
-    transform: scale(3);
-    color:orangered
+li:hover {
+  transform: scale(1.55);
+  color: orangered;
 }
 
-li{
+li {
   width: 3vw;
   transform: scale(1.5);
   margin: 0 1.5vmax;
-
 }
