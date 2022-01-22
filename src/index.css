@@ -244,3 +244,25 @@ li {
   transform: scale(1.5);
   margin: 0 1.5vmax;
 }
+
+.pos-rel {
+  position: relative;
+}
+
+.skill {
+  position: relative;
+  font-size: 1vmin;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  margin-top: -1vmin;
+}
+.skill-text {
+  position: relative;
+  font-size: 1.5vmin;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  margin-top: 1vmin;
+  margin-bottom: 2vmin;
+}
