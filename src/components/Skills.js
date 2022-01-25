@@ -11,11 +11,12 @@ export class Skills extends React.Component {
       html: startedSkill(2018, 1, 1),
       css: startedSkill(2018, 1, 1),
       sass: startedSkill(2019, 3, 1),
-      js: startedSkill(2016, 0, 1),
+      js: startedSkill(2016, 6, 1),
       ts: startedSkill(2020, 11, 1),
       jq: deadSkill(2018, 2, 1, 2021, 10, 1),
       bootstrap: deadSkill(2020, 0, 1, 2021, 10, 1),
       foundation: deadSkill(2019, 3, 1, 2021, 10, 1),
+      jade: deadSkill(2019, 3, 1, 2020, 3, 1),
       sql: deadSkill(2018, 3, 1, 2018, 7, 1),
       mongo: deadSkill(2018, 3, 1, 2018, 7, 1),
       express: deadSkill(2018, 3, 1, 2018, 7, 1),
@@ -24,7 +25,7 @@ export class Skills extends React.Component {
       sequelize: deadSkill(2018, 3, 1, 2018, 7, 1),
       firebase: deadSkill(2018, 3, 1, 2018, 7, 1),
       github: startedSkill(2018, 2, 1),
-      git: startedSkill(2018, 2, 1),
+      svn: deadSkill(2020, 3, 1, 2021, 2, 1),
       bitbucket: deadSkill(2020, 3, 1, 2021, 10, 1),
       confluence: startedSkill(2019, 3, 1),
       jira: startedSkill(2019, 3, 1),
@@ -32,6 +33,10 @@ export class Skills extends React.Component {
       sketch: deadSkill(2019, 7, 1, 2020, 3, 1),
       photoshop: deadSkill(2019, 3, 1, 2020, 3, 1),
       invision: startedSkill(2020, 3, 1),
+      akamai: deadSkill(2020, 3, 1, 2021, 10, 1),
+      wcm: deadSkill(2020, 3, 1, 2021, 10, 1),
+      websphere: deadSkill(2019, 3, 1, 2020, 3, 1),
+      gulp: deadSkill(2019, 3, 1, 2020, 3, 1),
     }
     function startedSkill(yyyy, m, d) {
       const years = Math.round((new Date() - new Date(yyyy, m, d)) / (365 * 24 * 60 * 60 * 250)) / 4
@@ -94,6 +99,10 @@ export class Skills extends React.Component {
               <i className="devicon-foundation-plain-wordmark"></i>
               <p className="skill">{this.skills.foundation}</p>
             </li>
+            <li className="list-inline-item" title="Jade/Pug">
+              <p className="skill-text">Jade/Pug</p>
+              <p className="skill">{this.skills.jade}</p>
+            </li>
 
           </ul>
         </Parallax.Layer>
@@ -129,7 +138,6 @@ export class Skills extends React.Component {
               <p className="skill">{this.skills.sequelize}</p>
             </li>
             <li className="list-inline-item" title="Firebase">
-              {/* <i className="devicon-firebase-plain-wordmark"></i> */}
               <p className="skill-text">Firebase</p>
               <p className="skill">{this.skills.firebase}</p>
             </li>
@@ -142,15 +150,15 @@ export class Skills extends React.Component {
           offset={3.45}
           speed={1}
           style={{ display: 'flex', flexDirection: "column", alignItems: 'flex-start', justifyContent: 'start', zIndex: 2 }}>
-          <p style={{ color: 'orangered', fontWeight: 600, textDecoration: 'underline' }}>Dev Tools </p>
+          <p style={{ color: 'orangered', fontWeight: 600, textDecoration: 'underline' }}>Misc </p>
           <ul className="list-inline list-icons">
             <li className="list-inline-item" title="Github">
               <i className="devicon-github-plain-wordmark"></i>
               <p className="skill">{this.skills.github}</p>
             </li>
-            <li className="list-inline-item" title="Git">
-              <i className="devicon-git-plain-wordmark"></i>
-              <p className="skill">{this.skills.git}</p>
+            <li className="list-inline-item" title="SVN">
+              <p className="skill-text">SVN</p>
+              <p className="skill">{this.skills.svn}</p>
             </li>
             <li className="list-inline-item" title="Bitbucket">
               <i className="devicon-bitbucket-original-wordmark"></i>
@@ -183,6 +191,22 @@ export class Skills extends React.Component {
             <li className="list-inline-item" title="Invision">
               <p className="skill-text">Invision</p>
               <p className="skill">{this.skills.invision}</p>
+            </li>
+            <li className="list-inline-item" title="Akamai">
+              <p className="skill-text">Akamai</p>
+              <p className="skill">{this.skills.akamai}</p>
+            </li>
+            <li className="list-inline-item" title="IBM WCM">
+              <p className="skill-text">WCM</p>
+              <p className="skill">{this.skills.wcm}</p>
+            </li>
+            <li className="list-inline-item" title="Websphere eCommerce">
+              <p className="skill-text">Websphere eCommerce</p>
+              <p className="skill">{this.skills.websphere}</p>
+            </li>
+            <li className="list-inline-item" title="Gulp">
+              <p className="skill-text">Gulp</p>
+              <p className="skill">{this.skills.gulp}</p>
             </li>
 
           </ul>
