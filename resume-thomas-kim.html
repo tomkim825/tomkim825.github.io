@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas Kim Resume</title>
+  <style>
+    :root {
+      --text: #1f2937;
+      --muted: #4b5563;
+      --line: #d1d5db;
+      --accent: #111827;
+      --bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #f3f4f6;
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 0 auto;
+      padding: 0.58in 0.62in;
+      background: var(--bg);
+      box-shadow: 0 18px 40px rgba(17, 24, 39, 0.12);
+    }
+
+    .header {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 5px;
+      font-size: 28px;
+      line-height: 1.05;
+      color: var(--accent);
+    }
+
+    .headline {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .contact {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    section + section {
+      margin-top: 16px;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    p {
+      margin: 0;
+      font-size: 11px;
+      line-height: 1.5;
+    }
+
+    .summary {
+      border: 1px solid var(--line);
+      background: #fafafa;
+      padding: 12px 14px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px 18px;
+    }
+
+    .skill {
+      position: relative;
+      padding-left: 10px;
+      font-size: 11px;
+      line-height: 1.35;
+    }
+
+    .skill::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #6b7280;
+    }
+
+    .role {
+      border-top: 1px solid var(--line);
+      padding-top: 11px;
+    }
+
+    .role:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .role-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 3px;
+    }
+
+    .role-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .role-date {
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    .company {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 7px;
+      line-height: 1.45;
+    }
+
+    .edu {
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+    }
+
+    .edu:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .edu-school {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 3px;
+    }
+
+    .edu-degree {
+      font-size: 11px;
+      color: var(--text);
+      line-height: 1.45;
+    }
+
+    .edu-meta {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.45;
+      margin-top: 2px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin: 0 0 4px;
+      font-size: 11px;
+      line-height: 1.45;
+    }
+
+    .note {
+      margin-top: 6px;
+      font-size: 10px;
+      color: var(--muted);
+    }
+
+    @page {
+      size: letter;
+      margin: 0.5in;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        background: #ffffff;
+      }
+
+      .page {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <h1>Thomas Kim</h1>
+      <div class="headline">Software Engineer | Front-End Engineer</div>
+      <div class="contact">tomkim825@gmail.com | https://www.linkedin.com/in/thomas-c-kim | https://tomkim825.github.io/</div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <div class="summary">
+        <p>Software engineer with experience building and enhancing web applications across SaaS, healthcare, and e-commerce environments. Strong background in Angular-based front-end development, feature delivery, production support, platform modernization, and collaboration within agile teams. Experienced in shipping new features, maintaining member-facing platforms, supporting release processes, and turning design mockups into production-ready user experiences.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Core Skills</h2>
+      <div class="skills">
+        <div class="skill">Angular + AngularJS</div>
+        <div class="skill">NgRx</div>
+        <div class="skill">TypeScript</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">AI-assisted (codex) Development Workflows</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="role">
+        <div class="role-head">
+          <div class="role-title">Software Engineer II</div>
+          <div class="role-date">May 2025 - Present</div>
+        </div>
+        <div class="company">SportsEngine | Full-time | Remote</div>
+        <ul>
+          <li>Develop new features and enhancements across multiple repositories within the platform.</li>
+          <li>Use AI-assisted development as part of the initial workflow, then validate, correct, and fine-tune results to deliver projects on time.</li>
+          <li>Contribute across shared platform codebases with a focus on practical execution, iteration speed, and delivery reliability.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <div class="role-title">Software Engineer</div>
+          <div class="role-date">Nov 2021 - May 2025</div>
+        </div>
+        <div class="company">SportsEngine | Members &amp; Rosters Team | Remote</div>
+        <ul>
+          <li>Built new features for the Season Management platform as part of the Members &amp; Rosters team.</li>
+          <li>Worked on product development for roster and member-management functionality in a live SaaS environment.</li>
+          <li>Applied Angular and NgRx-based front-end development practices within a collaborative remote engineering workflow.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <div class="role-title">Application Developer</div>
+          <div class="role-date">Apr 2020 - Nov 2021</div>
+        </div>
+        <div class="company">Blue Shield of California | Oakland, California, United States</div>
+        <ul>
+          <li>Delivered front-end enhancements for a member portal in Angular within an agile scrum process.</li>
+          <li>Contributed to the billing and payments experience and supported development of prior-authorization functionality.</li>
+          <li>Participated in migration work to move code from JSP to Angular.</li>
+          <li>Supported adjacent technical processes involving IBM Web Content Manager and Akamai CDN.</li>
+          <li>Helped manage scheduled releases and provided immediate support for production defects after release.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <div class="role-title">Front End Web Developer</div>
+          <div class="role-date">Apr 2019 - Apr 2020</div>
+        </div>
+        <div class="company">Tailored Brands, Inc. | Fremont, CA</div>
+        <ul>
+          <li>Built multiple weekly homepage refreshes for Joseph A. Bank based on Photoshop and Sketch files from the creative team.</li>
+          <li>Created HTML email campaigns across multiple brands including Men's Wearhouse, Jos. A. Bank, Moores, and K&amp;G Fashion.</li>
+          <li>Worked in an agile, cross-functional A/B testing scrum supporting revenue-focused site experimentation.</li>
+          <li>Implemented ADA compliance updates for josbank.com.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <div class="role-title">Web Developer</div>
+          <div class="role-date">Nov 2018 - Feb 2019</div>
+        </div>
+        <div class="company">PRO Unlimited, Onsite at Gap, Inc. | Contract | San Francisco, California, United States</div>
+        <ul>
+          <li>Worked as a contractor at Gap, Inc. headquarters on the Old Navy team.</li>
+          <li>Turned design mockups into production code for Old Navy international homepages, including Canada, Mexico, and Egypt.</li>
+          <li>Built category and promotional banner experiences for e-commerce campaigns.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+
+      <div class="edu">
+        <div class="edu-school">University of California, Berkeley </div>
+        <div class="edu-degree">Bachelor of Science (BS), Nutrition Sciences</div>
+      </div>
+
+      <div class="edu">
+        <div class="edu-school">San Jose State University</div>
+        <div class="edu-degree">Master of Science (MS), Nutrition Sciences</div>
+      </div>
+
+      <div class="edu">
+        <div class="edu-school">UC Berkeley Extension</div>
+        <div class="edu-degree">Full Stack Web Development Bootcamp</div>
+       </div>
+    </section>
+  </main>
+</body>
+</html>
