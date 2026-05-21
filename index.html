@@ -1,1 +1,171 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"><link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"><link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"><title>Thomas Kim</title><style>#root,body,html{width:100%;height:100%;margin:0;padding:0}a,body,br,button,div,hr,html,i,optgroup,option,select{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default}</style><link href="/static/css/main.a3a3c1ec.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="/static/js/main.87ea2976.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thomas Kim — Software Engineer portfolio"
+    />
+    <title>Thomas Kim | Software Engineer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top">Thomas Kim</a>
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="nav" id="navMenu">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <img
+          src="./static/media/ThomasKim.b9e7b502.jpg"
+          alt="Thomas Kim"
+          class="avatar"
+        />
+        <div>
+          <p class="eyebrow">Software Engineer</p>
+          <h1>Hi, I’m Thomas Kim.</h1>
+          <p class="lead">
+            Front-end focused engineer experienced with Angular, React, and
+            modern web technologies. I build clean, performant user experiences
+            with product-minded collaboration.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="#experience">View Experience</a>
+            <a
+              class="btn btn-ghost"
+              href="https://github.com/tomkim825/tomkim825.github.io/raw/master/ThomasKimResume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Resume</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="container section">
+        <h2>About</h2>
+        <p>
+          I bring <span id="dynamicExperienceLine"></span> years of professional
+          front-end experience, including work at SportsEngine, Blue Shield of
+          California, Tailored Brands, and Gap Inc.
+        </p>
+      </section>
+
+      <section id="experience" class="container section">
+        <h2>Experience</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Software Engineer — SportsEngine</h3>
+            <p class="muted">Nov 2021 – Present</p>
+            <p>
+              Front-end (Angular) development for member and roster experiences
+              in an agile team.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Application Developer — Blue Shield of California</h3>
+            <p class="muted">Apr 2020 – Nov 2021</p>
+            <p>
+              Built and enhanced member portal features using Angular and
+              enterprise web tooling.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Front End Web Developer — Tailored Brands</h3>
+            <p class="muted">Apr 2019 – Apr 2020</p>
+            <p>
+              Shipped frequent homepage refreshes and campaign updates in close
+              cross-functional workflows.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Web Developer — PRO Unlimited @ Gap, Inc</h3>
+            <p class="muted">Nov 2018 – Feb 2019</p>
+            <p>
+              Turned design mockups into production code for Old Navy
+              international homepages, including Canada, Mexico, and Egypt.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="container section">
+        <h2>Skills</h2>
+        <ul class="chips">
+          <li>Angular</li>
+          <li>AngularJS</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>NgRx</li>
+          <li>Responsive Web Design</li>
+          <li>Github</li>
+          <li>Unit testing</li>
+          <li>Agentic engineering</li>
+          <li>Problem solving</li>
+          <li>Team player</li>
+        </ul>
+      </section>
+
+      <section id="resume" class="container section">
+        <h2>Resume</h2>
+        <p>
+          <a
+            class="btn"
+            href="https://github.com/tomkim825/tomkim825.github.io/raw/master/ThomasKimResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View / Download Resume
+          </a>
+        </p>
+      </section>
+
+      <section id="contact" class="container section">
+        <h2>Contact</h2>
+        <p>Let’s connect:</p>
+        <p>
+          <a href="mailto:tomkim825@gmail.com">tomkim825@gmail.com</a> ·
+          <a
+            href="https://github.com/tomkim825/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          ·
+          <a
+            href="https://www.linkedin.com/in/thomas-c-kim/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Thomas Kim</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
